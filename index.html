@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FatherFigure — Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">FF<span class="nav-dot">.</span></a>
+    <div class="nav-links">
+        <a href="mycv.html" class="nav-link">My CV</a>
+        <a href="#projects" class="nav-link nav-scroll" data-target="projects">My Work</a>
+        <a href="contactme.html" class="nav-link nav-cta">Contact Me</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <!-- LEFT: Animated slideshow — 3 photos cycling automatically -->
+    <div class="hero-images">
+        <div class="slide active">
+            <img src="images/photo1.jpg" alt="FatherFigure">
+        </div>
+        <div class="slide">
+            <img src="images/photo2.jpg" alt="FatherFigure">
+        </div>
+        <div class="slide">
+            <img src="images/photo3.jpg" alt="FatherFigure">
+        </div>
+        <div class="slide-label" id="slideLabel">BACKEND</div>
+        <div class="slide-dots">
+            <button class="slide-dot active" data-index="0"></button>
+            <button class="slide-dot" data-index="1"></button>
+            <button class="slide-dot" data-index="2"></button>
+        </div>
+    </div>
+    <!-- END LEFT -->
+
+    <!-- RIGHT: Text — stays put while photos cycle on the left -->
+    <div class="hero-text">
+        <div class="hero-eyebrow">Olawale Portfolio</div>
+        <div class="hero-name">
+            <div class="name-stacked">
+                <span class="name-line name-father reveal-up">FATHER</span>
+                <span class="name-line name-figure reveal-up delay-1">FIGURE</span>
+            </div>
+            <div class="name-tag reveal-fade delay-3">
+                <span class="tag-bracket">{</span>
+                <span class="tag-text">Full-Stack &amp; Backend Dev</span>
+                <span class="tag-bracket">}</span>
+            </div>
+        </div>
+        <p class="hero-desc reveal-fade delay-4">
+            I build the engines behind the web — APIs, databases, server logic — and make them speak to beautiful frontends.
+        </p>
+        <a href="#projects" class="hero-btn reveal-fade delay-5 nav-scroll" data-target="projects">
+            <span>See My Work</span>
+            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+    </div>
+    <!-- END RIGHT -->
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about section-pad">
+    <div class="about-inner">
+        <div class="section-label">// ABOUT ME</div>
+        <div class="about-grid">
+            <div class="about-text reveal-up">
+                <h2 class="about-heading">
+                    Backend Engineer &amp; <em>Problem Architect</em>
+                </h2>
+                <p>I'm a versatile Full-Stack Developer with a backend-first mindset. I specialize in building reliable, scalable web applications using Python, Flask, and SQL databases — then connecting them to clean, purposeful frontends.</p>
+                <p>Skilled in REST APIs, database design, WordPress management, and automation. I believe great software is invisible — it just <em>works.</em></p>
+            </div>
+            <div class="about-skills reveal-up delay-2">
+                <div class="skill-group">
+                    <div class="skill-group-title">Backend</div>
+                    <div class="skills-list">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Flask</span>
+                        <span class="skill-pill">SQLAlchemy</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">SQLite / PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-title">Frontend</div>
+                    <div class="skills-list">
+                        <span class="skill-pill">HTML/CSS</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">Jinja2</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-title">Tools & Other</div>
+                    <div class="skills-list">
+                        <span class="skill-pill">WordPress</span>
+                        <span class="skill-pill">Git/GitHub</span>
+                        <span class="skill-pill">Canva</span>
+                        <span class="skill-pill">AI & Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services section-pad dark-section">
+    <div class="services-inner">
+        <div class="section-label light">// WHAT I DO</div>
+        <h2 class="section-heading light reveal-up">Built to Serve. <em>Designed to Last.</em></h2>
+        <div class="services-grid">
+            <div class="service-card reveal-up delay-1">
+                <div class="service-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="3" y="3" width="30" height="30" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 14l5 4-5 4M18 22h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Python, Flask, database architecture, REST APIs, server logic. The foundation everything else stands on.</p>
+            </div>
+            <div class="service-card featured reveal-up delay-2">
+                <div class="service-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M8 18c3-6 9-6 10 0s7 6 10 0M6 18h24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Website Management</h3>
+                <p>Keeping sites professional, functional, and updated. One active project: Church Website — coming soon.</p>
+                <span class="card-badge">Active</span>
+            </div>
+            <div class="service-card reveal-up delay-3">
+                <div class="service-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 30V12l12-8 12 8v18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="13" y="18" width="10" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <h3>Full-Stack Projects</h3>
+                <p>End-to-end web applications — from database schema to the final pixel on screen.</p>
+            </div>
+            <div class="service-card reveal-up delay-4">
+                <div class="service-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 6v4M18 26v4M6 18h4M26 18h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="18" cy="18" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <h3>AI & Automation</h3>
+                <p>Integrating smart automation into workflows and web applications to save time and scale efficiently.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section class="projects-preview section-pad" id="projects">
+    <div class="projects-inner">
+        <div class="section-label">// SELECTED WORK</div>
+        <h2 class="section-heading reveal-up">Web Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card reveal-up delay-1">
+                <div class="project-visual coming-soon-visual">
+                    <div class="project-overlay">
+                        <span class="coming-badge">Coming Soon</span>
+                    </div>
+                    <div class="project-placeholder-art">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 5v20M20 15h20M10 50V30l20-15 20 15v20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="22" y="38" width="16" height="12" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="p-tag">Flask</span>
+                        <span class="p-tag">SQLAlchemy</span>
+                        <span class="p-tag">Website Mgmt</span>
+                    </div>
+                    <h3 class="project-title">Church Website</h3>
+                    <p class="project-desc">A full-featured church management and information web platform. Currently in final development — launching soon.</p>
+                    <span class="project-status">● In Progress</span>
+                </div>
+            </div>
+            <div class="project-card ghost reveal-up delay-2">
+                <div class="project-visual ghost-visual">
+                    <div class="ghost-plus">+</div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title muted">Next Project</h3>
+                    <p class="project-desc muted">Something is being built in the dark. Stay tuned.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip dark-section">
+    <div class="cta-inner reveal-up">
+        <span class="cta-eyebrow">Got a project?</span>
+        <h2 class="cta-heading">Let's Build Something <em>Real.</em></h2>
+        <a href="contactme.html" class="cta-btn">Get In Touch</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <span class="footer-brand">FatherFigure</span>
+        <span class="footer-copy">© 2026 — Built with passion & obsession</span>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/fatherfigure18?igsh=MTVtZDkxcWI2ZWg5cA==" class="social-link">Instagram</a>
+            <a href="https://www.linkedin.com/in/tioluwani-hakeem-822b75325?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
