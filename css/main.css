@@ -115,16 +115,7 @@ em { font-style: italic; color: var(--accent); }
 .nav-cta:hover { background: var(--accent); color: var(--black); }
 .nav-cta::after { display: none; }
 
-/* =============================================
-   HERO — full-bleed split layout
-   Left 50%: photos edge-to-edge, top to bottom
-   Right 50%: name + text centered vertically
-   ============================================= */
-/* =============================================
-   HERO — split layout
-   Left 50% : animated photo slideshow
-   Right 50%: text (unchanged)
-   ============================================= */
+
 .hero {
   min-height: 100vh;
   display: grid;
@@ -134,16 +125,16 @@ em { font-style: italic; color: var(--accent); }
   overflow: hidden;
 }
 
-/* LEFT column — slideshow container */
+
 .hero-images {
   grid-column: 1;
   grid-row: 1;
-  position: relative;           /* REQUIRED: slides position: absolute against this */
+  position: relative;           
   height: 100vh;
   overflow: hidden;
 }
 
-/* Each slide sits on top of each other inside .hero-images */
+
 .slide {
   position: absolute;
   top: 0; left: 0;
@@ -178,7 +169,7 @@ em { font-style: italic; color: var(--accent); }
   to   { transform: scale(1.0); }
 }
 
-/* Right-edge gradient fade into text panel */
+
 .hero-images::after {
   content: '';
   position: absolute;
@@ -190,7 +181,7 @@ em { font-style: italic; color: var(--accent); }
   pointer-events: none;
 }
 
-/* Dot indicators */
+
 .slide-dots {
   position: absolute;
   bottom: 28px;
@@ -215,7 +206,7 @@ em { font-style: italic; color: var(--accent); }
   width: 48px;
 }
 
-/* Slide label e.g. BACKEND / DEVELOPER / BUILDER */
+
 .slide-label {
   position: absolute;
   bottom: 60px;
@@ -229,7 +220,7 @@ em { font-style: italic; color: var(--accent); }
   transition: opacity 0.4s ease;
 }
 
-/* RIGHT column — text panel */
+
 .hero-text {
   grid-column: 2;
   grid-row: 1;
@@ -241,7 +232,7 @@ em { font-style: italic; color: var(--accent); }
   background: var(--black);
 }
 
-/* Amber vertical accent stripe */
+
 .hero-text::before {
   content: '';
   position: absolute;
@@ -284,12 +275,12 @@ em { font-style: italic; color: var(--accent); }
   display: block;
 }
 
-/* FATHER — solid white, bold presence */
+
 .name-father {
   color: var(--white);
 }
 
-/* FIGURE — stroked outline with faint amber glow */
+
 .name-figure {
   -webkit-text-stroke: 2px var(--white);
   color: transparent;
@@ -351,7 +342,7 @@ em { font-style: italic; color: var(--accent); }
 
 .hero-divider { display: none; }
 
-/* --- SECTION UTILITIES --- */
+
 .section-pad { padding: 100px 60px; }
 .dark-section { background: var(--dark); }
 
@@ -375,7 +366,7 @@ em { font-style: italic; color: var(--accent); }
 }
 .section-heading.light { color: var(--white); }
 
-/* --- ABOUT --- */
+
 .about-inner { max-width: 1200px; margin: 0 auto; }
 
 .about-grid {
@@ -425,7 +416,7 @@ em { font-style: italic; color: var(--accent); }
 }
 .skill-pill:hover { border-color: var(--accent); color: var(--accent); }
 
-/* --- SERVICES --- */
+
 .services-inner { max-width: 1200px; margin: 0 auto; }
 
 .services-grid {
@@ -469,7 +460,7 @@ em { font-style: italic; color: var(--accent); }
   border-radius: 2px;
 }
 
-/* --- PROJECTS PREVIEW --- */
+
 .projects-inner { max-width: 1200px; margin: 0 auto; }
 
 .projects-header {
@@ -751,7 +742,7 @@ em { font-style: italic; color: var(--accent); }
   line-height: 1.75;
 }
 
-/* --- CONTACT PAGE --- */
+
 .contact-body {
   padding: 0 60px 100px;
   max-width: 700px;
@@ -811,7 +802,7 @@ em { font-style: italic; color: var(--accent); }
 }
 .form-submit:hover { background: var(--white); letter-spacing: 5px; }
 
-/* --- MY WORK PAGE --- */
+
 .work-grid {
   padding: 0 60px 100px;
   max-width: 1200px;
@@ -819,7 +810,7 @@ em { font-style: italic; color: var(--accent); }
 }
 .work-grid .projects-grid { grid-template-columns: repeat(3, 1fr); }
 
-/* --- RESPONSIVE --- */
+
 @media (max-width: 1024px) {
   .hero { grid-template-columns: 45% 55%; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
@@ -855,11 +846,7 @@ em { font-style: italic; color: var(--accent); }
   .navbar .nav-links { gap: 18px; }
 }
 
-/* ============================================
-   CONTACT PAGE
-   ============================================ */
 
-/* --- Hero header --- */
 .contact-hero {
   min-height: 52vh;
   display: flex;
@@ -870,7 +857,7 @@ em { font-style: italic; color: var(--accent); }
   background: var(--dark);
 }
 
-/* Huge faint background word */
+
 .contact-hero::before {
   content: 'HELLO';
   position: absolute;
@@ -910,7 +897,7 @@ em { font-style: italic; color: var(--accent); }
   padding-left: 18px;
 }
 
-/* --- Info strip (4 cards) --- */
+
 .contact-strip {
   background: var(--accent);
   padding: 60px;
@@ -981,7 +968,7 @@ em { font-style: italic; color: var(--accent); }
   line-height: 1.6;
 }
 
-/* WhatsApp card hover cue */
+
 .contact-card:nth-child(2):hover .contact-card-value {
   text-decoration: underline;
 }
@@ -1020,7 +1007,7 @@ em { font-style: italic; color: var(--accent); }
   background: transparent;
 }
 
-/* Shown when no real form ID is set yet */
+
 .gform-placeholder {
   display: flex;
   align-items: center;
@@ -1072,7 +1059,7 @@ em { font-style: italic; color: var(--accent); }
   color: var(--black);
 }
 
-/* --- Contact responsive --- */
+
 @media (max-width: 900px) {
   .contact-strip { padding: 40px 24px; }
   .contact-strip-inner { grid-template-columns: repeat(2, 1fr); gap: 1px; }
@@ -1086,11 +1073,7 @@ em { font-style: italic; color: var(--accent); }
   .contact-hero-title { font-size: clamp(52px, 16vw, 80px); }
 }
 
-/* ============================================
-   CV PAGE — mycv.html
-   ============================================ */
 
-/* --- CV Hero / Profile Header --- */
 .cv-page-hero {
   background: var(--dark);
   padding: 120px 60px 56px;
@@ -1126,7 +1109,7 @@ em { font-style: italic; color: var(--accent); }
   gap: 36px;
 }
 
-/* Circular avatar */
+
 .cv-avatar {
   width: 110px;
   height: 110px;
@@ -1272,7 +1255,7 @@ em { font-style: italic; color: var(--accent); }
   font-style: italic;
 }
 
-/* --- CV Timeline Entries --- */
+
 .cv-entry {
   display: grid;
   grid-template-columns: 14px 1fr;
@@ -1387,13 +1370,13 @@ em { font-style: italic; color: var(--accent); }
   color: var(--accent);
 }
 
-/* Hot/primary skills get accent border */
+
 .cv-pill.hot {
   border-color: rgba(232,160,32,0.5);
   color: var(--white);
 }
 
-/* --- Project items in CV --- */
+
 .cv-project-item {
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1444,7 +1427,7 @@ em { font-style: italic; color: var(--accent); }
   line-height: 1.7;
 }
 
-/* --- Language bars --- */
+
 .cv-lang-row {
   display: flex;
   align-items: center;
@@ -1487,7 +1470,7 @@ em { font-style: italic; color: var(--accent); }
   flex-shrink: 0;
 }
 
-/* --- CV Responsive --- */
+
 @media (max-width: 900px) {
   .cv-layout {
     grid-template-columns: 1fr;

@@ -1,6 +1,4 @@
-// =====================
-// SCROLL REVEAL
-// =====================
+
 const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-fade');
 
 const observer = new IntersectionObserver((entries) => {
@@ -14,9 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-// =====================
-// NAVBAR SCROLL STYLE
-// =====================
+
 const navbar = document.querySelector('.navbar');
 if (navbar) {
   window.addEventListener('scroll', () => {
@@ -26,10 +22,7 @@ if (navbar) {
   });
 }
 
-// =====================
-// "MY WORK" — smooth scroll to #projects on homepage
-// On other pages it navigates to index.html#projects normally
-// =====================
+
 document.querySelectorAll('.nav-scroll').forEach(link => {
   link.addEventListener('click', function(e) {
     const targetId = this.dataset.target;
@@ -37,17 +30,17 @@ document.querySelectorAll('.nav-scroll').forEach(link => {
     if (target) {
       // We're on the homepage — scroll smoothly
       e.preventDefault();
-      const offset = 80; // navbar height
+      const offset = 80; 
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     } else {
-      // We're on another page — navigate to homepage and let it scroll
+ 
       this.href = 'index.html#projects';
     }
   });
 });
 
-// If page loads with #projects in URL, scroll to it after a tiny delay
+
 window.addEventListener('load', () => {
   if (window.location.hash === '#projects') {
     setTimeout(() => {
@@ -61,9 +54,7 @@ window.addEventListener('load', () => {
   }
 });
 
-// =====================
-// HERO SLIDESHOW
-// =====================
+
 const slides     = document.querySelectorAll('.slide');
 const dots       = document.querySelectorAll('.slide-dot');
 const slideLabel = document.getElementById('slideLabel');
